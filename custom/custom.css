@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* Customizing Notebook Dashbboard header */
+
+#ipython_notebook::before{
+ content:'MBA-200A';
+ font-family: 'Roboto';
+ color: #FFFFFF;
+}
+
+#ipython_notebook img{
+  display:block;
+  background: url("images/logos/berkeley-haas-wordmark_gold-white.svg") no-repeat;
+  background-size: contain;
+  width: 100px;
+  height: 30px;
+  padding-left: 100px;
+  padding-right: 50px;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body{
+   font-family: 'Roboto', sans-serif;
+}
+
+
+body > #header {
+  background: #15284B;
+}
+
+/* nb title */
+
+#notebook name {
+  font-weight: 700;
+  font-family: 'Roboto';
+  color: #FFFFFF;
+}
+
+/* last checkpoint */
+.checkpoint_status,
+.autosave_status {
+  color: #FFFFFF;
+}
+
+/* TODO: highlight gold on hover?*/
+/* TODO: debug */
+
+.navbar-default {
+  background: #EEEEEE;
+  color:
+  border: none;
+}
+
+/* Markdown cells */
+html {
+  font-family: 'Roboto'
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+h2 {
+  text-transform: uppercase;
+}
