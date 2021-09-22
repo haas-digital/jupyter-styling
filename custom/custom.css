@@ -1,11 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 
 /* Customizing Notebook Dashbboard header */
-
+/*
 #ipython_notebook::before{
  content:'MBA-200A';
  font-family: 'Roboto';
  color: #FFFFFF;
+}
+*/
+
+body{
+   font-family: 'Roboto', sans-serif;
+   color: #15284B;
 }
 
 #ipython_notebook img{
@@ -13,54 +19,63 @@
   background: url("images/logos/berkeley-haas-wordmark_gold-white.svg") no-repeat;
   background-size: contain;
   width: 100px;
-  height: 30px;
+  height: 50px;
   padding-left: 100px;
   padding-right: 50px;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-body{
-   font-family: 'Roboto', sans-serif;
-}
-
-
-body > #header {
+#header-container {
   background: #15284B;
+  width: auto;
 }
 
-/* nb title */
-
-#notebook name {
-  font-weight: 700;
-  font-family: 'Roboto';
-  color: #FFFFFF;
+#kernel_logo_widget {
+  visibility: hidden;
 }
 
-/* last checkpoint */
-.checkpoint_status,
-.autosave_status {
-  color: #FFFFFF;
+
+#notebook_name {
+  color: #FDB515;
+}
+
+/* TODO: debug (want caps only on parent menus) */
+/* TODO: write a less hacky solution for color */
+ul.nav.navbar-nav > li * {
+  color: #15284B;
+  text-transform: none;
+}
+
+.checkpoint_status, .autosave_status {
+  color: #FDB515;
+  font-style: italic;
 }
 
 /* TODO: highlight gold on hover?*/
 /* TODO: debug */
-
+/*
 .navbar-default {
   background: #EEEEEE;
   color:
   border: none;
 }
+*/
+
+
+/* Notebook styling */
+
+#notebook_panel {
+  background: #F5F5F5;
+}
 
 /* Markdown cells */
-html {
-  font-family: 'Roboto'
+
+div.text_cell_render {
+  color: #15284B;
 }
 
-h1 {
+h1, h2 {
   text-transform: uppercase;
 }
 
-h2 {
-  text-transform: uppercase;
-}
+/* Code cells */
