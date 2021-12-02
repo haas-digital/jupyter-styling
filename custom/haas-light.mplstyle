@@ -1,47 +1,95 @@
 # Author: Keeley Takimoto
 
-font.family: Roboto
-
+## ***************************************************************************
+## * LINES                                                                   *
+## ***************************************************************************
 lines.linewidth: 4
 lines.solid_capstyle: butt
 
-legend.fancybox: True
-legend.loc: best
-
-# colors: Haas Berkeley Blue, California Gold, Founder's Rock, Medalist, Pacific, Rose Garden
-axes.prop_cycle: cycler('color', ['15284B', 'FDB515', '3B7EA1', 'C4820E', '46535E', 'EE1F60']) + cycler('linestyle', ['solid', 'dashed', 'dotted', 'dashdot', '[1, 1, 1, 1, 5, 1]', '[1, 1, 1, 1, 1, 1, 5, 1]'])
-axes.facecolor: None
-axes.axisbelow: true
-axes.grid: true
-axes.edgecolor: 333333
-axes.linewidth: 3.0 #fix this
-axes.titlesize: xx-large
-
+## ***************************************************************************
+## * PATCHES                                                                 *
+## ***************************************************************************
 patch.edgecolor: 333333
 patch.linewidth: 0.5
 
-svg.fonttype: path
+## ***************************************************************************
+## * HATCHES                                                                 *
+## ***************************************************************************
+hatch.color: 333333
+#hatch.linewidth: 1.0
 
-lines.linestyle: None
-
-grid.linestyle: - #fix this
-grid.linewidth: 1.0
-grid.color: cbcbcb
-
-xtick.major.size: 0
-xtick.minor.size: 0
-ytick.major.size: 0
-ytick.minor.size: 0
-
+## ***************************************************************************
+## * FONT                                                                    *
+## ***************************************************************************
+font.family: Roboto
 font.size:14.0
 
-savefig.edgecolor: 333333
-savefig.facecolor: 333333
+## ***************************************************************************
+## * TEXT                                                                    *
+## ***************************************************************************
+text.color: 333333
 
+## ***************************************************************************
+## * AXES                                                                    *
+## ***************************************************************************
+axes.facecolor: FFFFFF
+axes.edgecolor: 333333
+axes.linewidth: 3.0 #fix this
+axes.grid: true
+axes.titlesize: xx-large
+axes.titlecolor: 333333
+axes.labelcolor: 333333
+axes.axisbelow: true
+# colors: Haas Berkeley Blue, Founder's Rock, Rose Garden, South Hall, Pacific, Stone Pine
+axes.prop_cycle: cycler('color', ['15284B', '3B7EA1', 'EE1F60', '6C3302', '46535E', '584F29']) + cycler('linestyle', ['solid', 'dashed', 'dotted', 'dashdot', '[1, 1, 1, 1, 5, 1]', '[1, 1, 1, 1, 1, 1, 5, 1]'])
+
+## ***************************************************************************
+## * TICKS                                                                   *
+## ***************************************************************************
+xtick.major.size: 0
+xtick.minor.size: 0
+xtick.color: 333333
+ytick.major.size: 0
+ytick.minor.size: 0
+ytick.color: 333333
+
+## ***************************************************************************
+## * GRIDS                                                                   *
+## ***************************************************************************
+grid.linestyle: - #fix this
+grid.linewidth: 1.0
+grid.color: 545454
+
+## ***************************************************************************
+## * LEGEND                                                                  *
+## ***************************************************************************
+legend.fontsize: large
+
+## ***************************************************************************
+## * FIGURE                                                                  *
+## ***************************************************************************
+figure.titlesize: xx-large
+figure.titleweight: bold
+figure.figsize: 12, 10
+figure.facecolor: FFFFFF
 figure.subplot.left: 0.08
 figure.subplot.right: 0.95
 figure.subplot.bottom: 0.07
-figure.facecolor: None
+
+## ***************************************************************************
+## * SCATTER PLOTS                                                           *
+## ***************************************************************************
+#scatter.marker: o         # The default marker type for scatter plots.
+#scatter.edgecolors: face  # The default edge colors for scatter plots.
+
+
+## ***************************************************************************
+## * SAVING FIGURES                                                          *
+## ***************************************************************************
+savefig.edgecolor: 333333
+savefig.facecolor: 333333
+
+svg.fonttype: path
 
 #TODO: deal with the legend (loc, transparency, overlap)
 #TODO: bar hashing cycler
