@@ -10,7 +10,8 @@ legend.loc: best
 
 # colors: Haas Berkeley Blue, California Gold, Founder's Rock, Medalist, Pacific, Rose Garden
 axes.prop_cycle: (cycler('color', ['15284B', 'FDB515', '3B7EA1', 'C4820E', '46535E', 'EE1F60'])
-                  + cycler('linestyle', ['solid', 'dashed', 'dotted', 'dashdot', '[1, 1, 1, 1, 5, 1]', '[1, 1, 1, 1, 1, 1, 5, 1]']))
+                  + cycler('linestyle', ['solid', 'dashed', 'dotted', 'dashdot', '[1, 1, 1, 1, 5, 1]', '[1, 1, 1, 1, 1, 1, 5, 1]'])
+                  + cycler('marker', ['o', 's', '^', '*', 'P', 'X']))
 axes.facecolor: None
 axes.axisbelow: true
 axes.grid: true
@@ -45,3 +46,4 @@ figure.facecolor: None
 #TODO: deal with the legend (loc, transparency, overlap)
 #TODO: bar hashing cycler
 #TODO: vert barplot label angles
+
