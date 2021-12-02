@@ -1,0 +1,88 @@
+# Author: Keeley Takimoto
+
+## ***************************************************************************
+## * LINES                                                                   *
+## ***************************************************************************
+lines.linewidth: 4
+lines.solid_capstyle: butt
+
+## ***************************************************************************
+## * PATCHES                                                                 *
+## ***************************************************************************
+patch.edgecolor: 333333
+patch.linewidth: 0.5
+
+## ***************************************************************************
+## * FONT                                                                    *
+## ***************************************************************************
+font.family: Roboto
+font.size:14.0
+
+## ***************************************************************************
+## * TEXT                                                                    *
+## ***************************************************************************
+text.color: FFFFFF
+
+## ***************************************************************************
+## * AXES                                                                    *
+## ***************************************************************************
+# colors: California Gold, Lawrence, Ion, Bay Fog, Golden Gate, Lap Lane
+axes.facecolor: 15284B
+axes.edgecolor: 333333
+axes.linewidth: 3.0 #fix this
+axes.grid: true
+axes.titlesize: xx-large
+axes.titlecolor: FFFFFF
+axes.axisbelow: true
+axes.prop_cycle: cycler('color', ['FDB515', '00B0DA', 'CFDD45', 'DDD5C7', 'ED4E33', '00A598']) + cycler('linestyle', ['solid', 'dashed', 'dotted', 'dashdot', '[1, 1, 1, 1, 5, 1]', '[1, 1, 1, 1, 1, 1, 5, 1]'])
+
+## ***************************************************************************
+## * TICKS                                                                   *
+## ***************************************************************************
+xtick.major.size: 0
+xtick.minor.size: 0
+ytick.major.size: 0
+ytick.minor.size: 0
+
+## ***************************************************************************
+## * GRIDS                                                                   *
+## ***************************************************************************
+grid.linestyle: - #fix this
+grid.linewidth: 1.0
+grid.color: cbcbcb
+
+## ***************************************************************************
+## * LEGEND                                                                  *
+## ***************************************************************************
+legend.fancybox: True
+legend.loc: best
+
+## ***************************************************************************
+## * FIGURE                                                                  *
+## ***************************************************************************
+figure.subplot.left: 0.08
+figure.subplot.right: 0.95
+figure.subplot.bottom: 0.07
+figure.facecolor: 15284B
+figure.titlesize: xx-large
+figure.titleweight: bold
+figure.figsize: 12, 10
+
+## ***************************************************************************
+## * SCATTER PLOTS                                                           *
+## ***************************************************************************
+#scatter.marker: o         # The default marker type for scatter plots.
+#scatter.edgecolors: face  # The default edge colors for scatter plots.
+
+
+## ***************************************************************************
+## * SAVING FIGURES                                                          *
+## ***************************************************************************
+savefig.edgecolor: 333333
+savefig.facecolor: 333333
+
+svg.fonttype: path
+
+#TODO: deal with the legend (loc, transparency, overlap)
+#TODO: bar hashing cycler
+#TODO: vert barplot label angles
