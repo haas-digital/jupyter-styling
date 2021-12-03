@@ -16,7 +16,6 @@ patch.linewidth: 0.5
 ## * HATCHES                                                                 *
 ## ***************************************************************************
 hatch.color: 333333
-#hatch.linewidth: 1.0
 
 ## ***************************************************************************
 ## * FONT                                                                    *
@@ -34,10 +33,11 @@ text.color: 333333
 ## ***************************************************************************
 axes.facecolor: FFFFFF
 axes.edgecolor: 333333
-axes.linewidth: 3.0 #fix this
+axes.linewidth: 2.0 #fix this
 axes.grid: true
 axes.titlesize: xx-large
 axes.titlecolor: 333333
+axes.labelsize: large
 axes.labelcolor: 333333
 axes.axisbelow: true
 # colors: Haas Berkeley Blue, Founder's Rock, Rose Garden, South Hall, Pacific, Stone Pine
@@ -56,9 +56,8 @@ ytick.color: 333333
 ## ***************************************************************************
 ## * GRIDS                                                                   *
 ## ***************************************************************************
-grid.linestyle: - #fix this
 grid.linewidth: 1.0
-grid.color: 545454
+grid.color: 808080
 
 ## ***************************************************************************
 ## * LEGEND                                                                  *
@@ -70,8 +69,9 @@ legend.fontsize: large
 ## ***************************************************************************
 figure.titlesize: xx-large
 figure.titleweight: bold
-figure.figsize: 12, 10
+figure.figsize: 10, 8
 figure.facecolor: FFFFFF
+figure.edgecolor: 333333
 figure.subplot.left: 0.08
 figure.subplot.right: 0.95
 figure.subplot.bottom: 0.07
@@ -79,9 +79,7 @@ figure.subplot.bottom: 0.07
 ## ***************************************************************************
 ## * SCATTER PLOTS                                                           *
 ## ***************************************************************************
-#scatter.marker: o         # The default marker type for scatter plots.
-#scatter.edgecolors: face  # The default edge colors for scatter plots.
-
+scatter.edgecolors: black
 
 ## ***************************************************************************
 ## * SAVING FIGURES                                                          *
@@ -90,7 +88,3 @@ savefig.edgecolor: 333333
 savefig.facecolor: 333333
 
 svg.fonttype: path
-
-#TODO: deal with the legend (loc, transparency, overlap)
-#TODO: bar hashing cycler
-#TODO: vert barplot label angles

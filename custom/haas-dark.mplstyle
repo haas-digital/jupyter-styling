@@ -13,6 +13,11 @@ patch.edgecolor: 333333
 patch.linewidth: 0.5
 
 ## ***************************************************************************
+## * HATCHES                                                                 *
+## ***************************************************************************
+hatch.color: FFFFFF
+
+## ***************************************************************************
 ## * FONT                                                                    *
 ## ***************************************************************************
 font.family: Roboto
@@ -28,11 +33,13 @@ text.color: FFFFFF
 ## ***************************************************************************
 # colors: California Gold, Lawrence, Ion, Bay Fog, Golden Gate, Lap Lane
 axes.facecolor: 15284B
-axes.edgecolor: 333333
-axes.linewidth: 3.0 #fix this
+axes.edgecolor: FFFFFF
+axes.linewidth: 2.0 #fix this
 axes.grid: true
 axes.titlesize: xx-large
 axes.titlecolor: FFFFFF
+axes.labelsize: large
+axes.labelcolor: FFFFFF
 axes.axisbelow: true
 axes.prop_cycle: cycler('color', ['FDB515', '00B0DA', 'CFDD45', 'DDD5C7', 'ED4E33', '00A598']) + cycler('linestyle', ['solid', 'dashed', 'dotted', 'dashdot', '[1, 1, 1, 1, 5, 1]', '[1, 1, 1, 1, 1, 1, 5, 1]'])
 
@@ -41,15 +48,16 @@ axes.prop_cycle: cycler('color', ['FDB515', '00B0DA', 'CFDD45', 'DDD5C7', 'ED4E3
 ## ***************************************************************************
 xtick.major.size: 0
 xtick.minor.size: 0
+xtick.color: FFFFFF
 ytick.major.size: 0
 ytick.minor.size: 0
+ytick.color: FFFFFF
 
 ## ***************************************************************************
 ## * GRIDS                                                                   *
 ## ***************************************************************************
-grid.linestyle: - #fix this
 grid.linewidth: 1.0
-grid.color: cbcbcb
+grid.color: 627598
 
 ## ***************************************************************************
 ## * LEGEND                                                                  *
@@ -60,20 +68,19 @@ legend.loc: best
 ## ***************************************************************************
 ## * FIGURE                                                                  *
 ## ***************************************************************************
+figure.titlesize: xx-large
+figure.titleweight: bold
+figure.figsize: 10, 8
+figure.facecolor: 15284B
+figure.edgecolor: 15284B
 figure.subplot.left: 0.08
 figure.subplot.right: 0.95
 figure.subplot.bottom: 0.07
-figure.facecolor: 15284B
-figure.titlesize: xx-large
-figure.titleweight: bold
-figure.figsize: 12, 10
 
 ## ***************************************************************************
 ## * SCATTER PLOTS                                                           *
 ## ***************************************************************************
-#scatter.marker: o         # The default marker type for scatter plots.
-#scatter.edgecolors: face  # The default edge colors for scatter plots.
-
+scatter.edgecolors: white
 
 ## ***************************************************************************
 ## * SAVING FIGURES                                                          *
@@ -82,7 +89,3 @@ savefig.edgecolor: 333333
 savefig.facecolor: 333333
 
 svg.fonttype: path
-
-#TODO: deal with the legend (loc, transparency, overlap)
-#TODO: bar hashing cycler
-#TODO: vert barplot label angles
