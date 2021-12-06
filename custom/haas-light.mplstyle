@@ -32,12 +32,12 @@ text.color: 333333
 ## * AXES                                                                    *
 ## ***************************************************************************
 axes.facecolor: FFFFFF
-axes.edgecolor: 333333
-axes.linewidth: 2.0 #fix this
+# axes.edgecolor: 333333
+axes.linewidth: 0
 axes.grid: true
 axes.titlesize: xx-large
 axes.titlecolor: 333333
-axes.labelsize: large
+axes.labelsize: x-large
 axes.labelcolor: 333333
 axes.axisbelow: true
 # colors: Haas Berkeley Blue, Founder's Rock, Rose Garden, South Hall, Pacific, Stone Pine

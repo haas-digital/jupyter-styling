@@ -31,16 +31,16 @@ text.color: FFFFFF
 ## ***************************************************************************
 ## * AXES                                                                    *
 ## ***************************************************************************
-# colors: California Gold, Lawrence, Ion, Bay Fog, Golden Gate, Lap Lane
 axes.facecolor: 15284B
-axes.edgecolor: FFFFFF
-axes.linewidth: 2.0 #fix this
+#axes.edgecolor: FFFFFF
+axes.linewidth: 0
 axes.grid: true
 axes.titlesize: xx-large
 axes.titlecolor: FFFFFF
-axes.labelsize: large
+axes.labelsize: x-large
 axes.labelcolor: FFFFFF
 axes.axisbelow: true
+# colors: California Gold, Lawrence, Ion, Bay Fog, Golden Gate, Lap Lane
 axes.prop_cycle: cycler('color', ['FDB515', '00B0DA', 'CFDD45', 'DDD5C7', 'ED4E33', '00A598']) + cycler('linestyle', ['solid', 'dashed', 'dotted', 'dashdot', '[1, 1, 1, 1, 5, 1]', '[1, 1, 1, 1, 1, 1, 5, 1]'])
 
 ## ***************************************************************************
