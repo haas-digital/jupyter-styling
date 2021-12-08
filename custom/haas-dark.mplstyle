@@ -70,7 +70,7 @@ legend.loc: best
 ## ***************************************************************************
 figure.titlesize: xx-large
 figure.titleweight: bold
-figure.figsize: 10, 8
+figure.figsize: 8, 6
 figure.facecolor: 15284B
 figure.edgecolor: 15284B
 figure.subplot.left: 0.08
