@@ -1,16 +1,9 @@
-# jupyter-branding
+# jupyter-styling
 
-Jupyter notebook stylesheet and Berkeley Haas brand color palettes, along with instructions for usage in Jupyter notebooks.
+Matplotlib stylesheet and Berkeley Haas brand color palettes, along with instructions for usage in Jupyter notebooks.
 
 
 ## Local Installation
-
-### Install Notebook Stylesheet
-Place the `custom/` folder (which includes the stylesheet) in your Jupyter config folder, located by default at `~/.jupyter`. 
-
-If you need to find your Jupyter config directories, you can run the following command from the command line:
-
-<code>jupyter --config-dir</code>
 
 ### Install Fonts
 The stylesheets use Roboto. Note: all Matplotlib fonts must be in ttf format.
