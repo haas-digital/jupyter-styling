@@ -103,3 +103,6 @@ Once `haas-light.mplstyle` is in the appropriate location, you can specify your 
 
 `import matplotlib.pyplot as plt`
 `plt.style.use('haas-dark')`
+
+Code and README maintained by Keeley Takimoto (ktakimoto@berkeley.edu). Enormous thanks to Amy Ho for her work on 
+Berkeley branding and colorblind accessibility.
