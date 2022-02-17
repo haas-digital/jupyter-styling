@@ -2,18 +2,57 @@
 
 Jupyter notebook stylesheet and Berkeley Haas brand color palettes, along with instructions for usage in Jupyter notebooks.
 
+Note: Jupyter notebook stylesheet work on hold pending Jupyter UI accessibility updates.
+
+## Motivation
+This stylesheet was developed with two goals in mind:
+- increase graph accessibility by default with minimum user effort
+- brand graphs for Haas Berkeley
+
+### Increasing Accessibility
+Notable default features included in the stylesheet:
+
+- figure
+  - increased figure size
+  - AA contrast-compliant background grid
+  - increased title and axis label sizes
+- color palette
+  - each color passes AA contrast compliance with regard to the default background
+  - colors were chosen to maximize contrast for colorblindness with one another (within Berkeley brand colors)
+- scatter plots
+  - points have a border to increase contrast with overlapping points
+- line plots
+  - line styles vary automatically with color
+
+### Haas Berkeley branding
+- Haas Berkeley brand colors in palette, titles/labels, and axes
+- 'Roboto' default font
+
+#### Notes on accessibility
+While this stylesheet makes graphs more accessible in many cases, users should still expect that graphs will need 
+ additional style tweaks at the time the code is written in order to achieve WCAG 2.0 compliance. Notable things
+that could NOT be automated in this stylesheet:
+
+- as of Matplotlib 3.5.0, it is not possible to do the following things via stylesheet:
+  - automatically cycle through scatter plot point shape with color
+  - automatically cycle through bar graph hatch patterns with color
+  - add contrasting borders between bar graph bars
+There are also some limitations that come from Haas branding:
+  - color palette colors may not be discernible in grayscale or for users with achromatopsia. 
+  Recommend using the matplotlib built-in grayscale palette instead.
+
+We recommend using thinking of this stylesheet as an accessibility aid and not an all-in-one
+solution. Complementary best practices include:
+- Avoiding conveying meaning with color alone 
+  - Labeling lines, bars, axes, etc
+  - Manually changing scatter plot point shape for different categories with the `marker` parameter
+- Providing screenreader-friendly tables alongside graphs that convey the same information
+- Writing alt text for graphs exported as images
 
 ## Local Installation
 
-### Install Notebook Stylesheet
-Place the `custom/` folder (which includes the stylesheet) in your Jupyter config folder, located by default at `~/.jupyter`. 
-
-If you need to find your Jupyter config directories, you can run the following command from the command line:
-
-<code>jupyter --config-dir</code>
-
 ### Install Fonts
-The stylesheets use Roboto. Note: all Matplotlib fonts must be in ttf format.
+The stylesheets use Roboto. Note: all fonts must be in ttf format to be used in Matplotlib.
 
 1. If Jupyter Notebook is running, stop it.
 2. [Download Roboto](https://fonts.google.com/specimen/Roboto)
