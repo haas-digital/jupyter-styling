@@ -1,9 +1,10 @@
-# jupyter-branding
+# jupyter-styling
 
-Jupyter notebook stylesheet and Berkeley Haas brand color palettes, along with instructions for usage in Jupyter notebooks.
+Matplotlib stylesheet and Berkeley Haas brand color palettes, along with instructions for usage in Jupyter notebooks.
 
 Note: Jupyter notebook stylesheet work on hold pending Jupyter UI accessibility updates.
 
+------------
 ## Motivation
 This stylesheet was developed with two goals in mind:
 - increase graph accessibility by default with minimum user effort
@@ -23,7 +24,7 @@ Notable default features included in the stylesheet:
   - points have a border to increase contrast with overlapping points
 - line plots
   - line styles vary automatically with color
-
+  
 ### Haas Berkeley branding
 - Haas Berkeley brand colors in palette, titles/labels, and axes
 - 'Roboto' default font
@@ -49,8 +50,8 @@ solution. Complementary best practices include:
 - Providing screenreader-friendly tables alongside graphs that convey the same information
 - Writing alt text for graphs exported as images
 
+--------
 ## Local Installation
-
 ### Install Fonts
 The stylesheets use Roboto. Note: all fonts must be in ttf format to be used in Matplotlib.
 
