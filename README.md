@@ -4,13 +4,29 @@ Matplotlib stylesheet and Berkeley Haas brand color palettes, along with instruc
 
 Note: Jupyter notebook stylesheet work on hold pending Jupyter UI accessibility updates.
 
+<ol>
+  <li><a href='#motive'>Motivation</a>
+    <ol><li><a href="#access">Accessibility</a>
+        <ul><li><a href="#notes">Notes on accessibility</a></li></ul>
+        </li>
+        <li><a href="#brand">Branding</a>
+        </li>
+      </ol>
+  <li> <a href="#install">Local Installation</a>
+    <ol><li> <a href="#fonts">Install fonts</a></li>
+        <li> <a href="#style">Install stylesheet</a></li>
+    </ol>
+  </li>
+  
+  </li></ol>
+
 ------------
-## Motivation
+## <a name='motive'>Motivation</a>
 This stylesheet was developed with two goals in mind:
 - increase graph accessibility by default with minimum user effort
 - brand graphs for Haas Berkeley
 
-### Increasing Accessibility
+### <a name='access'>Accessibility</a>
 Notable default features included in the stylesheet:
 
 - figure
@@ -24,12 +40,8 @@ Notable default features included in the stylesheet:
   - points have a border to increase contrast with overlapping points
 - line plots
   - line styles vary automatically with color
-  
-### Haas Berkeley branding
-- Haas Berkeley brand colors in palette, titles/labels, and axes
-- 'Roboto' default font
 
-#### Notes on accessibility
+#### <a name='notes'>Notes on accessibility</a>
 While this stylesheet makes graphs more accessible in many cases, users should still expect that graphs will need 
  additional style tweaks at the time the code is written in order to achieve WCAG 2.0 compliance. Notable things
 that could NOT be automated in this stylesheet:
@@ -50,9 +62,13 @@ solution. Complementary best practices include:
 - Providing screenreader-friendly tables alongside graphs that convey the same information
 - Writing alt text for graphs exported as images
 
+### <a name='brand'>Haas Berkeley branding</a>
+- Haas Berkeley brand colors in palette, titles/labels, and axes
+- 'Roboto' default font
+
 --------
-## Local Installation
-### Install Fonts
+## <a name='install'>Local Installation</a>
+### <a name='fonts'>Install Fonts</a>
 The stylesheets use Roboto. Note: all fonts must be in ttf format to be used in Matplotlib.
 
 1. If Jupyter Notebook is running, stop it.
@@ -73,7 +89,7 @@ from matplotlib import font_manager
 font_manager.findfont('Roboto')
 </pre>
 
-### Install Matplotlib Stylesheet
+### <a id='style'>Install Matplotlib Stylesheet</a>
 Place the `haas-light.mplstyle` and `haas-dark.mplstyle` files into the Matplotlib style library at `mpl_configdir/stylelib`. By default 
 `mpl_configdir` should be in `~/.config/matplotlib`, but you can check where yours is with `matplotlib.get_configdir()` 
 (you may need to create the directory). You also can change the directory where Matplotlib looks for the `stylelib/`
